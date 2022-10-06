@@ -5,21 +5,20 @@ name = input("Enter Employee Name: ")
 yearsinService = int(input("Enter Years-in-Service: "))
 office = input("Enter Office: ")
 
-if office == "IT" and "it":
-    if yearsinService > 9:
-        print("Hi", name,", your bonus is 10000.")
+if office == "IT":
+    if yearsinService >= 10:
+        print("Hi", name, ", your bonus is 10000.")
     else:
-        print("Hi", name,", your bonus is 5000.")
-elif office == "acct" and "Acct":
-    if yearsinService > 9:
-        print("Hi", name,", your bonus is 12000.")
+        print("Hi", name, ", your bonus is 5000.")
+elif office == "acct":
+    if yearsinService >= 10:
+        print("Hi", name, ", your bonus is 12000.")
     else:
-        print("Hi", name,", your bonus is 6000.")
-elif office == "HR" and "hr":
-    if yearsinService > 9:
+        print("Hi", name, ", your bonus is 6000.")
+elif office == "HR":
+    if yearsinService >= 10:
         print("Hi ", name, ", your bonus is 15000.")
     else:
         print("Hi ", name, ", your bonus is 7500.")
 else:
-    print("Office is not existing.")
-
+    print("Office does not exist.")
